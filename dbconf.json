@@ -1,0 +1,17 @@
+{
+  "mysql_src": {
+    "host":  "localhost",
+    "user":  "etl",
+    "password":  "etl_contest",
+    "port":  33061,
+    "database": "sandbox"
+  },
+
+  "mysql_dst": {
+    "host":  "localhost",
+    "user":  "etl",
+    "password":  "etl_contest",
+    "port":  33062,
+    "database": "sandbox"
+  }
+}

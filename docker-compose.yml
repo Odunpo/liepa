@@ -1,0 +1,22 @@
+
+
+services:
+  mysql_src:
+    image: percona/percona-server:5.7.34
+    ports:
+      - "33061:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_USER: "etl"
+      MYSQL_PASSWORD: "etl_contest"
+      MYSQL_DATABASE: "sandbox"
+
+  mysql_dst:
+    image: percona/percona-server:5.7.34
+    ports:
+      - "33062:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_USER: "etl"
+      MYSQL_PASSWORD: "etl_contest"
+      MYSQL_DATABASE: "sandbox"
